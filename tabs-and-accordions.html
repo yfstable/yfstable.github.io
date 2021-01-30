@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <!-- Site Title-->
+    <title>Tabs and Accordions</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,700%7CExo+2:100,300,500,700,100italic,300italic%7CMontserrat:400,700">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="preloader-item">
+          <div class="diamond"></div>
+          <div class="diamond"></div>
+          <div class="diamond"></div>
+        </div>
+      </div>
+    </div>
+    <div class="page">
+      <!-- Page Header-->
+      <header class="section page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="40px" data-xl-stick-up-offset="40px" data-xxl-stick-up-offset="40px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main">
+              <!-- RD Navbar Panel-->
+              <div class="rd-navbar-panel">
+                <!-- RD Navbar Toggle-->
+                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-outer"><span></span></button>
+                <!-- RD Navbar Brand-->
+                <div class="rd-navbar-brand"><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-default-105x38.png" alt="" width="105" height="38" srcset="images/logo-default-210x76.png 2x"/><img class="brand-logo-light" src="images/logo-inverse-105x38.png" alt="" width="105" height="38" srcset="images/logo-inverse-210x76.png 2x"/></a>
+                </div>
+                <div class="rd-sidebar">
+                  <button class="rd-sidebar__button" data-rd-navbar-toggle="#rd-sidebar__list">
+                    <svg class="rd-sidebar__shape" version="1.1" x="0px" y="0px" width="28px" height="27px" viewbox="0 0 28 27">
+                      <path d="M10,7c0,1.657-1.343,3-3,3H3c-1.657,0-3-1.343-3-3V3c0-1.657,1.343-3,3-3h4c1.657,0,3,1.343,3,3V7z"></path>
+                      <path d="M28,7c0,1.657-1.343,3-3,3h-4c-1.657,0-3-1.343-3-3V3c0-1.657,1.343-3,3-3h4c1.657,0,3,1.343,3,3V7z"></path>
+                      <path d="M10,24c0,1.657-1.343,3-3,3H3c-1.657,0-3-1.343-3-3v-4c0-1.657,1.343-3,3-3h4c1.657,0,3,1.343,3,3V24z"></path>
+                      <path d="M28,24c0,1.657-1.343,3-3,3h-4c-1.657,0-3-1.343-3-3v-4c0-1.657,1.343-3,3-3h4c1.657,0,3,1.343,3,3V24z"></path>
+                    </svg>
+                  </button>
+                  <ul class="rd-sidebar__list context-dark" id="rd-sidebar__list">
+                    <li class="rd-sidebar__list-item">
+                      <div class="rd-sidebar__list-item-inner">
+                        <div class="icon rd-sidebar__list-item-icon linearicons-envelope"></div>
+                        <div class="rd-sidebar__list-item-main"><a class="rd-sidebar__list-item-link" href="contacts.html">Our Contacts</a></div>
+                      </div>
+                    </li>
+                    <li class="rd-sidebar__list-item">
+                      <div class="rd-sidebar__list-item-inner">
+                        <div class="icon rd-sidebar__list-item-icon linearicons-cash-dollar"></div>
+                        <div class="rd-sidebar__list-item-main"><a class="rd-sidebar__list-item-link" href="#">Create a Wallet</a></div>
+                      </div>
+                    </li>
+                    <li class="rd-sidebar__list-item">
+                      <div class="rd-sidebar__list-item-inner">
+                        <div class="icon rd-sidebar__list-item-icon linearicons-share2"></div>
+                        <div class="rd-sidebar__list-item-main">
+                          <ul class="list-inline list-inline-xs">
+                            <li><a class="icon icon-md link-light mdi mdi-facebook" href="#"></a></li>
+                            <li><a class="icon icon-md link-light mdi mdi-twitter" href="#"></a></li>
+                            <li><a class="icon icon-md link-light mdi mdi-youtube-play" href="#"></a></li>
+                            <li><a class="icon icon-md link-light mdi mdi-instagram" href="#"></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="rd-sidebar__list-item">
+                      <div class="rd-sidebar__list-item-inner">
+                        <div class="icon rd-sidebar__list-item-icon linearicons-bubble-dots"></div>
+                        <div class="rd-sidebar__list-item-main"><a class="rd-sidebar__list-item-link" href="#">Question Room</a></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="rd-navbar-nav-outer">
+                <!-- RD Navbar Nav-->
+                <ul class="rd-navbar-nav">
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="rd-nav-item active"><a class="rd-nav-link" href="#">Pages</a>
+                    <!-- RD Navbar Megamenu-->
+                    <ul class="rd-menu rd-navbar-megamenu">
+                      <li class="rd-megamenu-item">
+                        <p class="rd-megamenu-title">Pages 1</p>
+                        <ul class="rd-megamenu-list">
+                          <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="faq.html">FAQ</a></li>
+                          <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="typography.html">Typography</a></li>
+                          <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="buttons.html">Buttons</a></li>
+                          <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="forms.html">Forms</a></li>
+                          <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="tabs-and-accordions.html">Tabs and accordions</a></li>
+                        </ul>
+                      </li>
+                      <li class="rd-megamenu-item">
+                        <p class="rd-megamenu-title">Pages 2</p>
+                        <ul class="rd-megamenu-list">
+                          <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="progress-bars.html">Progress bars</a></li>
+                          <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="tables.html">Tables</a></li>
+                          <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="grid-system.html">Grid system</a></li>
+                          <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="privacy-policy.html">Privacy policy</a></li>
+                          <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="search-results.html">Search results</a></li>
+                        </ul>
+                      </li>
+                      <li class="rd-megamenu-item">
+                        <p class="rd-megamenu-title">Pages 3</p>
+                        <ul class="rd-megamenu-list">
+                          <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="404-page.html">404 Page</a></li>
+                          <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="503-page.html">503 Page</a></li>
+                          <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="maintenance.html">Maintenance</a></li>
+                          <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="coming-soon.html">Coming Soon</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">About us</a>
+                  </li>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="features.html">Features</a>
+                    <!-- RD Navbar Dropdown-->
+                    <ul class="rd-menu rd-navbar-dropdown">
+                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="use-bitcoin.html">Use Bitcoin</a></li>
+                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="wallet.html">Wallet</a></li>
+                    </ul>
+                  </li>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="news.html">News</a>
+                    <!-- RD Navbar Dropdown-->
+                    <ul class="rd-menu rd-navbar-dropdown">
+                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="news-list.html">News List</a></li>
+                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="news-post.html">News Post</a></li>
+                    </ul>
+                  </li>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="btc-to-usd">
+                <p class="btc-to-usd__title">BTC\USD</p>
+                <div class="btc-price">
+                  <div class="btcwdgt-price" data-bw-theme="light"></div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Breadcrumbs -->
+      <section class="breadcrumbs-custom bg-image context-dark" style="background-image: url(images/breadcrumbs-image-elements.jpg);">
+        <div class="container">
+          <div class="breadcrumbs-custom__main">
+            <h1 class="breadcrumbs-custom-title">Tabs &amp; Accordions</h1>
+          </div>
+          <ul class="breadcrumbs-custom__path">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Pages</a></li>
+            <li class="active">Tabs &amp; Accordions</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Tabs-->
+      <section class="section section-md bg-default text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-10">
+              <h3>Horizontal Tabs</h3>
+              <!-- Bootstrap tabs -->
+              <div class="tabs-custom tabs-horizontal tabs-corporate" id="tabs-1">
+                <!-- Nav tabs-->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-1-1" data-toggle="tab">Tab 1</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-2" data-toggle="tab">Tab 2</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-3" data-toggle="tab">Tab 3</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-4" data-toggle="tab">Tab 4</a></li>
+                </ul>
+                <!-- Tab panes-->
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="tabs-1-1">
+                    <p>Integer ultricies et neque in vehicula. Etiam eget odio lacinia, vulputate leo ac, auctor sem. Nulla sit amet congue elit. Nunc eget mattis massa. Vestibulum lacinia vel ex at lobortis. Cras non rhoncus urna, vitae pretium dolor. Cras facilisis accumsan diam, dictum cursus lectus. Nunc odio tortor, interdum nec fermentum vel, tincidunt at tortor. Donec quis ligula at eros laoreet lobortis in nec dui. Donec quis leo justo. In convallis erat eget mi pretium, eu auctor tortor ornare. Quisque aliquet quis ante nec condimentum. Pellentesque ac odio at leo tincidunt malesuada a at nibh.</p>
+                    <p>Imperdiet nunc justo, interdum eget ipsum iaculis, tempor aliquam orci. Fusce pretium orci vitae sapien porta, non pellentesque lectus viverra. Vivamus enim tortor, placerat et augue quis, laoreet fermentum purus. Duis ornare arcu sed enim commodo aliquet. Aenean semper, ipsum vel mattis laoreet, felis felis tempor justo, ut lobortis nisi augue et leo.</p>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-1-2">
+                    <p>Cras purus lorem, condimentum eget dui et, rhoncus venenatis turpis. Integer malesuada magna dolor, eget eleifend nisi vulputate in. Sed ultrices ligula bibendum mollis maximus. Morbi placerat, tellus sit amet vehicula mollis, diam erat cursus odio, et posuere nisi lorem non mauris.</p>
+                    <p>Proin viverra finibus tempus. Pellentesque aliquam lorem at eros feugiat, at mattis nibh dignissim. Phasellus enim purus, ultrices et suscipit nec, sagittis quis lorem. Donec in venenatis ligula, consequat cursus libero. Fusce vitae vestibulum nibh, eget efficitur tortor. Phasellus dignissim nulla hendrerit suscipit aliquam. Nullam eleifend purus eget nulla iaculis placerat. Nulla vulputate viverra gravida. Sed condimentum vehicula tempor. Vivamus ut congue urna. Fusce ullamcorper neque commodo arcu suscipit feugiat. In finibus lobortis. Sed elementum metus tincidunt enim, id imperdiet est fringilla.</p>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-1-3">
+                    <p>Donec et luctus quam. Cras sit amet nisl nec lorem vulputate rutrum. Pellentesque aliquet scelerisque ipsum dignissim semper. Integer ultrices sit amet sem id cursus. Ut vitae mi et sem euismod mollis quis vitae ligula. Morbi varius, urna vel scelerisque mattis, turpis justo tristique elit, id facilisis felis velit non massa. Ut in augue at risus mattis rhoncus a vel felis.</p>
+                    <p>Phasellus imperdiet, ante vel maximus tincidunt, dui orci tristique dui, et consectetur dui ex id nulla. Suspendisse eget turpis sed enim ullamcorper malesuada. Phasellus finibus, purus eget maximus dictum, nisl ante viverra eros, in aliquet sapien libero eu purus. Morbi dui massa, dictum vitae mauris eget, consequat aliquam sapien. Nam pharetra urna at tellus finibus consequat. Phasellus venenatis felis non sapien semper, at tincidunt nisl semper. Nam eget tortor risus. Nulla semper quam in ullamcorper semper. Sed viverra, dui nec venenatis, neque justo lobortis purus, quis fringilla magna ante quis augue.</p>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-1-4">
+                    <p>In ac tellus erat. Nullam augue diam, luctus vel justo in, consectetur maximus nunc. Nunc quam leo, aliquam vel justo nec, consequat cursus erat. Suspendisse porta maximus lacinia. Sed nunc lacus, facilisis nec dolor non, consequat pellentesque tortor. Etiam fringilla tincidunt maximus. Maecenas vehicula posuere nisi, sollicitudin gravida orci blandit a. Sed nec pulvinar lacus, eget vehicula leo. Vestibulum posuere tortor eu gravida gravida.</p>
+                    <p>Quisque in purus non quam sollicitudin tincidunt nec eu erat. Cras vitae odio consectetur, fermentum enim id, consectetur purus. Suspendisse congue sapien diam, nec ornare diam egestas vitae. Vivamus ornare quam porta sodales dignissim. Aliquam ultrices sollicitudin dignissim. Nunc sit amet sem imperdiet, laoreet turpis id, elementum massa. Suspendisse vel condimentum dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+      <!-- Vertical Tabs-->
+      <section class="section section-lg bg-default text-center">
+        <div class="container">
+          <h3>Vertical Tabs</h3>
+          <div class="row">
+            <div class="col-xl-11">
+              <!-- Bootstrap tabs-->
+              <div class="tabs-custom tabs-vertical tabs-corporate" id="tabs-2">
+                <!-- Nav tabs-->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-2-1" data-toggle="tab">Tab 1</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-2-2" data-toggle="tab">Tab 2</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-2-3" data-toggle="tab">Tab 3</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-2-4" data-toggle="tab">Tab 4</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-2-5" data-toggle="tab">Tab 5</a></li>
+                </ul>
+                <!-- Tab panes-->
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="tabs-2-1">
+                    <p>In ac tellus erat. Nullam augue diam, luctus vel justo in, consectetur maximus nunc. Nunc quam leo, aliquam vel justo nec, consequat cursus erat. Suspendisse porta maximus lacinia. Sed nunc lacus, facilisis nec dolor non, consequat pellentesque tortor. Etiam fringilla tincidunt maximus. Maecenas vehicula posuere nisi, sollicitudin gravida orci blandit a. Sed nec pulvinar lacus, eget vehicula leo. Vestibulum posuere tortor eu gravida gravida. Maecenas quis odio suscipit, mattis massa vitae, luctus mi. In lacinia libero et ex pharetra pulvinar. Donec auctor massa id quam dignissim tincidunt.</p>
+                    <p>Vivamus eget pharetra orci. Mauris eleifend cursus dictum. Phasellus quis accumsan sem. Phasellus risus nunc, finibus ac sem eu, viverra ultricies elit. Cras at auctor tortor. Ut laoreet ligula ut sapien venenatis, vitae pulvinar justo ornare. Fusce ultricies odio ut neque tempor mattis.</p>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-2-2">
+                    <p>Quisque quis tortor rhoncus, pretium felis eu, interdum sapien. Fusce suscipit arcu eu ligula efficitur porta. Etiam tincidunt mauris quam, vel maximus neque dapibus sed. Quisque eu tincidunt libero. Vivamus porttitor mi pharetra enim blandit, eget molestie massa pulvinar. Mauris scelerisque a leo eu vestibulum.</p>
+                    <p>Proin feugiat ultrices imperdiet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer facilisis a enim eu efficitur. Sed efficitur id lectus nec fringilla. Donec consequat a dolor vel accumsan. Suspendisse ligula ex, vestibulum in placerat vel, consectetur vel nisi. Curabitur lectus eros, euismod non dictum nec, sagittis et massa. Etiam eget laoreet massa. Donec sit amet elementum mi. Morbi vel maximus nibh. Ut scelerisque, neque et bibendum volutpat, metus neque ornare orci, in rutrum lorem eros dictum magna. Aliquam malesuada, enim sit amet rhoncus dignissim, dolor libero lobortis neque, vel scelerisque enim nibh sed ante.</p>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-2-3">
+                    <p>Phasellus lorem felis, sodales a efficitur nec, sollicitudin et sem. Proin varius euismod eros, quis mattis eros porttitor at. In ac lacus condimentum, porttitor lacus in, sagittis lacus. Sed ut lorem purus. Nam eget aliquam ante, eget suscipit dui. Nam auctor nunc vulputate lorem ultrices euismod. Quisque odio metus, semper a sapien vitae, imperdiet venenatis odio.</p>
+                    <p>Nam est nibh, fringilla nec ultricies vitae, vestibulum nec turpis. Proin semper mollis felis lobortis auctor. Nam sit amet elementum augue. Vestibulum at nunc viverra, fermentum erat in, mattis elit. Nullam nec tortor maximus, sodales nisl eget, consectetur diam. Duis convallis ullamcorper placerat. Pellentesque dictum lectus urna, et pellentesque nisl ultricies non. Quisque aliquet euismod felis vitae accumsan. Vestibulum auctor nisl vitae augue feugiat, sed hendrerit nisi faucibus. Nunc cursus, dui non fringilla ultricies, nulla velit posuere odio, vitae sollicitudin enim tellus ut arcu.</p>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-2-4">
+                    <p>Quisque consectetur condimentum eros eu tempor. Nunc et elementum ex, ut pellentesque justo. Quisque sed nunc non leo consectetur fringilla. Sed facilisis magna vitae bibendum accumsan. Ut sit amet turpis eu sem consequat gravida. Etiam egestas lacinia arcu et interdum. Nunc blandit enim quis orci pulvinar, eu lacinia elit venenatis.</p>
+                    <p>Curabitur ullamcorper dapibus elit vitae iaculis. Donec libero erat, ornare sed suscipit ac, condimentum ac arcu. Sed non imperdiet mi. Donec quam enim, varius rhoncus facilisis id, dapibus ac nulla. Aliquam at sapien sagittis, tempus nisl quis, ullamcorper ante. Nam viverra ex eget porttitor vehicula. Cras quis neque commodo, efficitur diam fermentum, mattis ligula. In a elementum urna. Nulla a tristique nisi. Aenean in facilisis enim. Nullam interdum nisi vitae sem pharetra, id aliquam elit dignissim. Aenean sollicitudin orci vitae eros elementum faucibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-2-5">
+                    <p>Duis et ante tempor, blandit dui nec, iaculis lorem. Suspendisse gravida tellus ut eros bibendum malesuada. Donec a ante id velit semper ultricies quis quis ipsum. Nam laoreet felis nibh, a venenatis dui mattis non. Etiam felis elit, venenatis eget turpis vel, viverra posuere libero. Sed scelerisque volutpat diam, ut ultricies nulla tempus eu.</p>
+                    <p>Praesent eu magna at diam pharetra iaculis sit amet quis leo. Sed ipsum magna, tincidunt scelerisque erat nec, feugiat congue purus. Nullam nec sem bibendum leo volutpat fermentum. Duis ac lobortis ligula. Nulla facilisi. Integer mattis ultricies velit. Etiam a ante suscipit, fermentum turpis non, condimentum orci. Pellentesque euismod finibus interdum. Mauris tempor consequat sagittis. Suspendisse sagittis urna magna, quis ullamcorper odio commodo ornare. Maecenas vitae faucibus tortor. Mauris viverra eu dui sit amet pellentesque. Etiam in lacus quis leo rutrum bibendum.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+      <section class="section section-lg bg-default text-center">
+        <div class="container">
+          <h3>Tabs line</h3>
+          <div class="row justify-content-center">
+            <div class="col-sm-10 col-md-8 col-lg-7 col-xl-6">
+              <!-- Bootstrap tabs-->
+              <div class="tabs-custom tabs-horizontal tabs-line" id="tabs-line">
+                <!-- Nav tabs-->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-line-1" data-toggle="tab">About</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-line-2" data-toggle="tab">How it works</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-line-3" data-toggle="tab">Mission</a></li>
+                </ul>
+                <!-- Tab panes-->
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="tabs-line-1">
+                    <p>Bitcoin differs from any currency you’ve used before, so it's important to understand some key points including the fact that this currency is not anonymous and can’t be regulated.</p>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-line-2">
+                    <p>Bitcoin is based on a protocol known as the blockchain, which allows to create, transfer and verify ultra-secure financial data without interference of third parties.</p>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-line-3">
+                    <p>Our mission as an official partner of Bitcoin Foundation is to help you enter and better understand the world of #1 cryptocurrency and avoid any issues you may encounter.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+      <section class="section section-lg bg-default text-center">
+        <div class="container">
+          <h3>Tabs light</h3>
+          <!-- Bootstrap tabs-->
+          <div class="tabs-custom tabs-horizontal tabs-light" id="tabs-light">
+            <!-- Nav tabs-->
+            <ul class="nav nav-tabs">
+              <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-light-1" data-toggle="tab">General questions</a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-light-2" data-toggle="tab">Wallet usage details</a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-light-3" data-toggle="tab">Technical problems</a></li>
+            </ul>
+            <!-- Tab panes-->
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="tabs-light-1">
+                <p>Quisque consectetur condimentum eros eu tempor. Nunc et elementum ex, ut pellentesque justo. Quisque sed nunc non leo consectetur fringilla. Sed facilisis magna vitae bibendum accumsan. Ut sit amet turpis eu sem consequat gravida. Etiam egestas lacinia arcu et interdum. Nunc blandit enim quis orci pulvinar, eu lacinia elit venenatis.</p>
+                <p>Curabitur ullamcorper dapibus elit vitae iaculis. Donec libero erat, ornare sed suscipit ac, condimentum ac arcu. Sed non imperdiet mi. Donec quam enim, varius rhoncus facilisis id, dapibus ac nulla. Aliquam at sapien sagittis, tempus nisl quis, ullamcorper ante. Nam viverra ex eget porttitor vehicula. Cras quis neque commodo, efficitur diam fermentum, mattis ligula. In a elementum urna. Nulla a tristique nisi. Aenean in facilisis enim. Nullam interdum nisi vitae sem pharetra, id aliquam elit dignissim. Aenean sollicitudin orci vitae eros elementum faucibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+              </div>
+              <div class="tab-pane fade" id="tabs-light-2">
+                <p>Duis et ante tempor, blandit dui nec, iaculis lorem. Suspendisse gravida tellus ut eros bibendum malesuada. Donec a ante id velit semper ultricies quis quis ipsum. Nam laoreet felis nibh, a venenatis dui mattis non. Etiam felis elit, venenatis eget turpis vel, viverra posuere libero. Sed scelerisque volutpat diam, ut ultricies nulla tempus eu.</p>
+                <p>Praesent eu magna at diam pharetra iaculis sit amet quis leo. Sed ipsum magna, tincidunt scelerisque erat nec, feugiat congue purus. Nullam nec sem bibendum leo volutpat fermentum. Duis ac lobortis ligula. Nulla facilisi. Integer mattis ultricies velit. Etiam a ante suscipit, fermentum turpis non, condimentum orci. Pellentesque euismod finibus interdum. Mauris tempor consequat sagittis. Suspendisse sagittis urna magna, quis ullamcorper odio commodo ornare. Maecenas vitae faucibus tortor. Mauris viverra eu dui sit amet pellentesque. Etiam in lacus quis leo rutrum bibendum.</p>
+              </div>
+              <div class="tab-pane fade" id="tabs-light-3">
+                <p>Quisque quis tortor rhoncus, pretium felis eu, interdum sapien. Fusce suscipit arcu eu ligula efficitur porta. Etiam tincidunt mauris quam, vel maximus neque dapibus sed. Quisque eu tincidunt libero. Vivamus porttitor mi pharetra enim blandit, eget molestie massa pulvinar. Mauris scelerisque a leo eu vestibulum.</p>
+                <p>Proin feugiat ultrices imperdiet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer facilisis a enim eu efficitur. Sed efficitur id lectus nec fringilla. Donec consequat a dolor vel accumsan. Suspendisse ligula ex, vestibulum in placerat vel, consectetur vel nisi. Curabitur lectus eros, euismod non dictum nec, sagittis et massa. Etiam eget laoreet massa. Donec sit amet elementum mi. Morbi vel maximus nibh. Ut scelerisque, neque et bibendum volutpat, metus neque ornare orci, in rutrum lorem eros dictum magna. Aliquam malesuada, enim sit amet rhoncus dignissim, dolor libero lobortis neque, vel scelerisque enim nibh sed ante.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Accordion-->
+      <section class="section section-md bg-gray-100 text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-9 col-xl-7">
+              <h3>Accordion</h3>
+              <!-- Bootstrap collapse-->
+              <div class="card-group-custom card-group-corporate" id="accordion1" role="tablist" aria-multiselectable="false">
+                <!-- Bootstrap card-->
+                <article class="card card-custom card-corporate">
+                  <div class="card-header" id="accordion1Heading1" role="tab">
+                    <div class="card-title"><a role="button" data-toggle="collapse" data-parent="#accordion1" href="#accordion1Collapse1" aria-controls="accordion1Collapse1" aria-expanded="true">How to Get Started with Bitcoin
+                        <div class="card-arrow"></div></a>
+                    </div>
+                  </div>
+                  <div class="collapse show" id="accordion1Collapse1" role="tabpanel" aria-labelledby="accordion1Heading1">
+                    <div class="card-body">
+                      <p>Curabitur vulputate, dui quis interdum elementum, nulla urna vestibulum magna, eu accumsan enim lectus ac risus. In tincidunt tortor mi, et finibus erat pulvinar ut. Vestibulum ut dui placerat.</p>
+                    </div>
+                  </div>
+                </article>
+                <!-- Bootstrap card-->
+                <article class="card card-custom card-corporate">
+                  <div class="card-header" id="accordion1Heading2" role="tab">
+                    <div class="card-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#accordion1Collapse2" aria-controls="accordion1Collapse2">What is Bitcoin Mining?
+                        <div class="card-arrow"></div></a>
+                    </div>
+                  </div>
+                  <div class="collapse" id="accordion1Collapse2" role="tabpanel" aria-labelledby="accordion1Heading2">
+                    <div class="card-body">
+                      <p>Maecenas laoreet quis turpis eget dapibus. Donec in ullamcorper neque, ornare rhoncus ante. Morbi nec pretium tortor, ac aliquet metus. Nunc eget efficitur sapien. Praesent sodales est.</p>
+                    </div>
+                  </div>
+                </article>
+                <!-- Bootstrap card-->
+                <article class="card card-custom card-corporate">
+                  <div class="card-header" id="accordion1Heading3" role="tab">
+                    <div class="card-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#accordion1Collapse3" aria-controls="accordion1Collapse3">How to Choose the Best Bitcoin Wallet
+                        <div class="card-arrow"></div></a>
+                    </div>
+                  </div>
+                  <div class="collapse" id="accordion1Collapse3" role="tabpanel" aria-labelledby="accordion1Heading3">
+                    <div class="card-body">
+                      <p>Curabitur vulputate, dui quis interdum elementum, nulla urna vestibulum magna, eu accumsan enim lectus ac risus. In tincidunt tortor mi, et finibus erat pulvinar ut.</p>
+                    </div>
+                  </div>
+                </article>
+                <!-- Bootstrap card-->
+                <article class="card card-custom card-corporate">
+                  <div class="card-header" id="accordion1Heading4" role="tab">
+                    <div class="card-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#accordion1Collapse4" aria-controls="accordion1Collapse4">How to Set Up Bitcoin Cold Storage
+                        <div class="card-arrow"></div></a>
+                    </div>
+                  </div>
+                  <div class="collapse" id="accordion1Collapse4" role="tabpanel" aria-labelledby="accordion1Heading4">
+                    <div class="card-body">
+                      <p>Nam sed pellentesque mi. Nam dignissim nibh nunc, et accumsan leo pretium non. Vestibulum id interdum nisi, porttitor sagittis metus. Quisque sit amet mauris in nisl bibendum faucibus.</p>
+                    </div>
+                  </div>
+                </article>
+                <!-- Bootstrap card-->
+                <article class="card card-custom card-corporate">
+                  <div class="card-header" id="accordion1Heading5" role="tab">
+                    <div class="card-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#accordion1Collapse5" aria-controls="accordion1Collapse5">Calculating Bitcoin Mining Profitability
+                        <div class="card-arrow"></div></a>
+                    </div>
+                  </div>
+                  <div class="collapse" id="accordion1Collapse5" role="tabpanel" aria-labelledby="accordion1Heading5">
+                    <div class="card-body">
+                      <p>Quisque rutrum fringilla vulputate. Sed sagittis elit at turpis maximus mattis et eget ex. Sed nec ex eu tortor sodales commodo. Etiam non nibh ultrices, finibus justo ut, auctor sapien.</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Accordion #2-->
+      <section class="section parallax-container section-md bg-gray-700 section-overlay-3 text-center" data-parallax-img="images/features-parallax-1.jpg">
+        <div class="parallax-content">
+          <div class="container">
+            <h3>Accordion #2</h3>
+            <!-- Bootstrap collapse-->
+            <div class="card-group-custom card-group-line" id="accordion-guide" role="tablist" aria-multiselectable="true">
+              <div class="row row-5 justify-content-center">
+                <div class="col-sm-10 col-lg-6">
+                  <!-- Bootstrap card-->
+                  <article class="card card-custom card-line">
+                    <div class="card-header" id="accordion-guideHeading1" role="tab">
+                      <div class="card-title"><a role="button" data-toggle="collapse" data-parent="#accordion-guide" href="#accordion-guideCollapse1" aria-controls="accordion-guideCollapse1" aria-expanded="true">How to Get Started with Bitcoin
+                          <div class="card-arrow"></div></a>
+                      </div>
+                    </div>
+                    <div class="collapse show" id="accordion-guideCollapse1" role="tabpanel" aria-labelledby="accordion-guideHeading1">
+                      <div class="card-body">
+                        <p>Curabitur vulputate, dui quis interdum elementum, nulla urna vestibulum magna, eu accumsan enim lectus ac risus. In tincidunt tortor mi, et finibus erat pulvinar ut. Vestibulum ut dui placerat.</p><a class="link link-arrow" href="#">Read more</a>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- Bootstrap card-->
+                  <article class="card card-custom card-line">
+                    <div class="card-header" id="accordion-guideHeading2" role="tab">
+                      <div class="card-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-guide" href="#accordion-guideCollapse2" aria-controls="accordion-guideCollapse2">What is Bitcoin Mining?
+                          <div class="card-arrow"></div></a>
+                      </div>
+                    </div>
+                    <div class="collapse" id="accordion-guideCollapse2" role="tabpanel" aria-labelledby="accordion-guideHeading2">
+                      <div class="card-body">
+                        <p>Maecenas laoreet quis turpis eget dapibus. Donec in ullamcorper neque, ornare rhoncus ante. Morbi nec pretium tortor, ac aliquet metus. Nunc eget efficitur sapien. Praesent sodales est.</p><a class="link link-arrow" href="#">Read more</a>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- Bootstrap card-->
+                  <article class="card card-custom card-line">
+                    <div class="card-header" id="accordion-guideHeading3" role="tab">
+                      <div class="card-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-guide" href="#accordion-guideCollapse3" aria-controls="accordion-guideCollapse3">How to Choose the Best Bitcoin Wallet
+                          <div class="card-arrow"></div></a>
+                      </div>
+                    </div>
+                    <div class="collapse" id="accordion-guideCollapse3" role="tabpanel" aria-labelledby="accordion-guideHeading3">
+                      <div class="card-body">
+                        <p>Curabitur vulputate, dui quis interdum elementum, nulla urna vestibulum magna, eu accumsan enim lectus ac risus. In tincidunt tortor mi, et finibus erat pulvinar ut.</p><a class="link link-arrow" href="#">Read more</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-sm-10 col-lg-6">
+                  <!-- Bootstrap card-->
+                  <article class="card card-custom card-line">
+                    <div class="card-header" id="accordion-guideHeading4" role="tab">
+                      <div class="card-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-guide" href="#accordion-guideCollapse4" aria-controls="accordion-guideCollapse4">How to Set Up Bitcoin Cold Storage
+                          <div class="card-arrow"></div></a>
+                      </div>
+                    </div>
+                    <div class="collapse" id="accordion-guideCollapse4" role="tabpanel" aria-labelledby="accordion-guideHeading4">
+                      <div class="card-body">
+                        <p>Nam sed pellentesque mi. Nam dignissim nibh nunc, et accumsan leo pretium non. Vestibulum id interdum nisi, porttitor sagittis metus. Quisque sit amet mauris in nisl bibendum faucibus.</p><a class="link link-arrow" href="#">Read more</a>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- Bootstrap card-->
+                  <article class="card card-custom card-line">
+                    <div class="card-header" id="accordion-guideHeading5" role="tab">
+                      <div class="card-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-guide" href="#accordion-guideCollapse5" aria-controls="accordion-guideCollapse5">Calculating Bitcoin Mining Profitability
+                          <div class="card-arrow"></div></a>
+                      </div>
+                    </div>
+                    <div class="collapse" id="accordion-guideCollapse5" role="tabpanel" aria-labelledby="accordion-guideHeading5">
+                      <div class="card-body">
+                        <p>Quisque rutrum fringilla vulputate. Sed sagittis elit at turpis maximus mattis et eget ex. Sed nec ex eu tortor sodales commodo. Etiam non nibh ultrices, finibus justo ut, auctor sapien.</p><a class="link link-arrow" href="#">Read more</a>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- Bootstrap card-->
+                  <article class="card card-custom card-line">
+                    <div class="card-header" id="accordion-guideHeading6" role="tab">
+                      <div class="card-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-guide" href="#accordion-guideCollapse6" aria-controls="accordion-guideCollapse6">How to Set Up a Bitcoin ASIC Miner
+                          <div class="card-arrow"></div></a>
+                      </div>
+                    </div>
+                    <div class="collapse" id="accordion-guideCollapse6" role="tabpanel" aria-labelledby="accordion-guideHeading6">
+                      <div class="card-body">
+                        <p>Vestibulum varius malesuada dui nec vestibulum. Quisque egestas augue at euismod ultrices. In scelerisque rutrum quam in ultricies. Pellentesque sit amet magna vel felis.</p><a class="link link-arrow" href="#">Read more</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div><a class="button button-primary" href="faq.html">See all articles</a>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Page Footer-->
+      <footer class="section footer-classic context-dark">
+        <div class="container">
+          <div class="footer-classic__main">
+            <div class="row row-50">
+              <div class="col-lg-6">
+                <div class="unit unit-spacing-sm flex-column flex-sm-row align-items-sm-center">
+                  <div class="unit-left"><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-default-105x38.png" alt="" width="105" height="38" srcset="images/logo-default-210x76.png 2x"/><img class="brand-logo-light" src="images/logo-inverse-105x38.png" alt="" width="105" height="38" srcset="images/logo-inverse-210x76.png 2x"/></a>
+                  </div>
+                  <div class="unit-body">
+                    <p><span style="max-width: 380px;">Bitcoin is the leading exchange of #1 cryptocurrency offering you the best conversion rates.</span></p>
+                  </div>
+                </div>
+                <div class="group group-lg group-middle">
+                  <p class="large">Connect with Community</p>
+                  <div class="group-item">
+                    <ul class="list-inline list-inline-sm">
+                      <li><a class="icon icon-lg link-default mdi mdi-facebook" href="#"></a></li>
+                      <li><a class="icon icon-lg link-default mdi mdi-twitter" href="#"></a></li>
+                      <li><a class="icon icon-lg link-default mdi mdi-youtube-play" href="#"></a></li>
+                      <li><a class="icon icon-lg link-default mdi mdi-instagram" href="#"></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="box-inset-3">
+                  <h4>Sign Up for Our Newsletter</h4>
+                  <!-- RD Mailform-->
+                  <form class="form form-lg form_light rd-mailform form-inline" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
+                    <div class="form-wrap">
+                      <input class="form-input" id="footer-subscribe-form-email" type="email" name="email" data-constraints="@Email @Required">
+                      <label class="form-label" for="footer-subscribe-form-email">Enter your e-mail</label>
+                    </div>
+                    <div class="form-button">
+                      <button class="button button-color-2" type="submit">Subscribe</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="footer-classic__aside">
+            <div class="list-wrap">
+              <ul class="list-nav">
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="news.html">News</a></li>
+                <li>
+                  <button data-toggle="modal" data-target="#modal-login-register">Sign In</button>
+                </li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+              </ul>
+            </div>
+            <div class="list-wrap">
+              <ul class="list-bordered">
+                <li>
+                  <!-- Rights-->
+                  <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Bitcoin</span><span>.&nbsp;</span><a href="privacy-policy.html">Privacy Policy</a></p>
+                </li>
+                <li><a href="mailto:#">info@demolink.org</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <!-- Modal Login/Register-->
+    <div class="modal modal-login-register fade" id="modal-login-register" tabindex="-1" role="dialog" aria-labelledby="modal-login-register-label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="font-weight-bold modal-title" id="modal-login-register-label">Login Form</h2>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="group-sm group-sm-justify"><a class="button button-sm button-facebook button-icon button-icon-left" href="#"><span class="icon fa fa-facebook"></span>Facebook</a><a class="button button-sm button-twitter button-icon button-icon-left" href="#"><span class="icon fa fa-twitter"></span>Twitter</a><a class="button button-sm button-google button-icon button-icon-left" href="#"><span class="icon fa fa-google-plus"></span>Google+</a></div>
+            <p class="text-uppercase">or</p>
+            <!-- RD Mailform-->
+            <form class="form rd-mailform form-centered">
+              <div class="form-wrap">
+                <input class="form-input" id="popup-form-login-email" type="email" name="email" data-constraints="@Email @Required">
+                <label class="form-label" for="popup-form-login-email">E-mail</label>
+              </div>
+              <div class="form-wrap">
+                <input class="form-input" id="popup-form-login-password" type="password" name="password" data-constraints="@Required">
+                <label class="form-label" for="popup-form-login-password">Password</label>
+              </div>
+              <div class="form-wrap">
+                <label class="checkbox-inline">
+                  <input name="checkbox" value="checkbox-1" type="checkbox" checked>Remember me 
+                </label>
+              </div>
+              <div class="group"> 
+                <button class="button button-primary" type="submit">Login</button>
+                <button class="button button-default-outline">Create an Account</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="js/core.min.js"> </script>
+    <script src="js/script.js"></script>
+    <script src="https://widgets.bitcoin.com/widget.js"></script>
+  </body>
+</html>
